@@ -30,3 +30,5 @@ and makes data refresh faster. The image below tables used in the process
 - **dataset_fashion_store_channels**:	Sales channels (App, E-commerce)	channel
 
 - **clean_stock** :	Inventory per product per country
+ 
+- **Items Table** : Contains detailed records of each product sold in every transaction, including quantity and price-related information.
