@@ -15,4 +15,4 @@ Defining an effective datastructure in dashboard is important, incorporating sta
 and makes data refresh faster. The image below tables used in the process
 
 
-![image alt](C://Users//hp//Pictures//Screenshots//data model.png)
+![image alt]()
