@@ -15,4 +15,4 @@ Defining an effective datastructure in dashboard is important, incorporating sta
 and makes data refresh faster. The image below tables used in the process
 
 
-![image alt]()
+![image alt](https://github.com//KshitijBante//Clothing_Brand_Analysis_Project//blob//3eebb5a388df7ef237fa83015d0ecda56ccddb9d//data%20model.png)
