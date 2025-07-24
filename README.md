@@ -10,17 +10,9 @@ performance of a fashion retail store using multiple data sources. The analysis 
 * Monitor stock levels and highlight low-stock products.
 * Build interactive dashboards for business decision-making.
 
-# Dataset Information
-The project uses multiple datasets:
+# Data Model
+Defining an effective datastructure in dashboard is important, incorporating star schema model gives an efficent design
+and makes data refresh faster. The image below tables used in the process
 
-**customers** - Customer details (age, gender, country)
 
-**Sales** -Transaction details (sale dates, amount, discount info.)
-
-**Products** - Product details (catalog price, cost price, category)
-
-**Items** - Items purchased in each sale (product_id, quantity)
-
-**Stock** - Current stock details for each product.
-
-**Campaigns** - Marketing campaign start and end dates.
+![image alt]("C://Users//hp//Pictures//Screenshots\data model.png")
