@@ -12,9 +12,15 @@ performance of a fashion retail store using multiple data sources. The analysis 
 
 # Dataset Information
 The project uses multiple datasets:
+
 **customers** - Customer details (age, gender, country)
+
 **Sales** -Transaction details (sale dates, amount, discount info.)
-**Products** - Product details (catalog price, cost price, category).
+
+**Products** - Product details (catalog price, cost price, category)
+
 **Items** - Items purchased in each sale (product_id, quantity)
+
 **Stock** - Current stock details for each product.
+
 **Campaigns** - Marketing campaign start and end dates.
