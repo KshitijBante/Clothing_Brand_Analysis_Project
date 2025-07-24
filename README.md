@@ -1,4 +1,4 @@
-# Clothing_Brand_Analysis_Project By using Python, SQL and Power Bi
+# Tiva_Clothing_Brand_Analysis_Project By using Python, SQL and Power Bi
 # Project Overview:
 This Project aims to analyze sales, customer behavior, and product
 performance of a fashion retail store using multiple data sources. The analysis helps in identifying sales trends, understanding the impact of marketing campaigns, monitoring inventory, and providing actionable insights for business growth.
@@ -21,11 +21,11 @@ and makes data refresh faster. The image below tables used in the process
 # Tables that use in Data Model
 - **clean_customers**	: Info about customers
 
-- **clean_products**   :	Product catalog	product_id
+- **clean_products**   :	about Tiva Brand Products and categories 
 
-- **clean_sales**	: Sales transactions	sale_id, customer_id
+- **clean_sales**	: Sales transactions	
 
-- **clean_campaigns**:	Marketing campaigns	campaign_id
+- **clean_campaigns**:	Marketing campaigns	
 
 - **dataset_fashion_store_channels**:	Sales channels (App, E-commerce)	channel
 
