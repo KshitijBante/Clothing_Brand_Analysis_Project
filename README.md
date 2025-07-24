@@ -19,14 +19,14 @@ and makes data refresh faster. The image below tables used in the process
 
 
 # Tables that use in Data Model
-**clean_customers**	: Info about customers
+- **clean_customers**	: Info about customers
 
-**clean_products**   :	Product catalog	product_id
+- **clean_products**   :	Product catalog	product_id
 
-**clean_sales**	: Sales transactions	sale_id, customer_id
+- **clean_sales**	: Sales transactions	sale_id, customer_id
 
-**clean_campaigns**:	Marketing campaigns	campaign_id
+- **clean_campaigns**:	Marketing campaigns	campaign_id
 
-**dataset_fashion_store_channels**:	Sales channels (App, E-commerce)	channel
+- **dataset_fashion_store_channels**:	Sales channels (App, E-commerce)	channel
 
-**clean_stock** :	Inventory per product per country
+- **clean_stock** :	Inventory per product per country
