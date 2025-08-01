@@ -1,0 +1,17 @@
+productsize= product_stock.groupby('size')['stock_quantity'].sum().reset_index()
+productsize=productsize.sort_values(by='stock_quantity',ascending=False).reset_index()
+
+plt.figure(figsize=(10,6))
+sz=sns.barplot(data=productsize,x='stock_quantity',y='size',hue='size',palette='dark')
+sz.bar_label(sz.containers[0])
+sz.bar_label(sz.containers[1])
+sz.bar_label(sz.containers[2])
+sz.bar_label(sz.containers[3])
+sz.bar_label(sz.containers[4])
+sz.bar_label(sz.containers[5])
+sz.bar_label(sz.containers[6])
+sz.bar_label(sz.containers[7])
+sz.bar_label(sz.containers[8])
+
+plt.title('Stock_quanity by Size')
+plt.show()

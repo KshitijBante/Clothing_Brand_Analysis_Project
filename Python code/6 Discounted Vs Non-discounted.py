@@ -1,0 +1,42 @@
+total_by_discount = sales_c.groupby('discounted')['total_amount'].sum().reset_index()
+total_by_discount['discounted'] = total_by_discount['discounted'].map({0: 'No Discount', 1: 'Discounted'})
+
+plt.figure(figsize=(6, 4))
+ch=sns.barplot(data=total_by_discount, x='discounted', y='total_amount',hue='discounted', palette='viridis')
+ch.bar_label(ch.containers[0])
+ch.bar_label(ch.containers[1])
+plt.title("Total Revenue: Discounted vs Non-Discounted Sales")
+plt.ylabel("Total Revenue")
+plt.xlabel("Discount Applied")
+plt.tight_layout()
+plt.show()
+
+plt.figure(figsize=(4,4))
+plt.pie(total_by_discount['total_amount'],labels=total_by_discount['discounted'],autopct='%1.1f%%')
+plt.title('Share of Total Revenue: With and Without Discounts')
+plt.show()
+
+count_by_discount=sales_c['discounted'].value_counts().reset_index()
+count_by_discount.columns=['discounted','count']
+plt.figure(figsize=(6,4))
+count_by_discount['discounted']=count_by_discount['discounted'].map({0:'No Discount',1:'Discounted'})
+k=sns.barplot(data=count_by_discount,x='discounted',y='count',hue='discounted',palette='pastel')
+k.bar_label(k.containers[0],fmt='%.0f')
+k.bar_label(k.containers[1],fmt='%.0f')
+
+plt.title('Number of Orders : Discounted Vs Non-Discounted')
+plt.ylabel('Order Count')
+plt.tight_layout()
+plt.show()
+
+#Avg Order value of discounted vs non-discount
+aov= sales_c.groupby('discounted')['total_amount'].mean().reset_index()
+aov['discounted']=aov['discounted'].map({0:'Not Discounted',1:'Discounted'})
+plt.figure(figsize=(6,4))
+sas=sns.barplot(data=aov,x='discounted',y='total_amount',hue='discounted',palette='muted')
+sas.bar_label(sas.containers[0],fmt='%.0f')
+sas.bar_label(sas.containers[1],fmt='%.0f')
+plt.title('Average Order Value: Not Discounted Vs Discounted')
+plt.ylabel('Avg Revenue Per Order')
+plt.tight_layout()
+plt.show()
